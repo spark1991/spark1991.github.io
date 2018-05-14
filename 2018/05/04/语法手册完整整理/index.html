@@ -5,7 +5,7 @@
   
 
 
-<html class="theme-next muse use-motion" lang="zh-Hans">
+<html class="theme-next mist use-motion" lang="zh-Hans">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="markdown语法详解1.特殊字符之所以把特殊字符放到最前面,就是因为Markdown对特殊字符处理不是很友好,很容易出现很奇怪的异常,其实就是因为文章中包含了特殊字符无法编译通过导致Hexo无法渲染在写博客时,一定注意不要写这些字符,如果要写,就进行转义有些人可能说可以使用反斜杠 \ 来处理,我这里不建议,因为我使用的时候没有解决问题。  下面是比较常见的几个: ! &amp;#33; — 惊叹号Ex">
+<meta name="description" content="markdown语法详解">
 <meta name="keywords" content="markdown">
 <meta property="og:type" content="article">
-<meta property="og:title" content="语法手册完整整理&#39;">
+<meta property="og:title" content="语法手册完整整理">
 <meta property="og:url" content="http://yoursite.com/2018/05/04/语法手册完整整理/index.html">
 <meta property="og:site_name" content="周磊的博客">
-<meta property="og:description" content="markdown语法详解1.特殊字符之所以把特殊字符放到最前面,就是因为Markdown对特殊字符处理不是很友好,很容易出现很奇怪的异常,其实就是因为文章中包含了特殊字符无法编译通过导致Hexo无法渲染在写博客时,一定注意不要写这些字符,如果要写,就进行转义有些人可能说可以使用反斜杠 \ 来处理,我这里不建议,因为我使用的时候没有解决问题。  下面是比较常见的几个: ! &amp;#33; — 惊叹号Ex">
+<meta property="og:description" content="markdown语法详解">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-05-10T01:21:43.500Z">
+<meta property="og:updated_time" content="2018-05-10T02:51:45.442Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="语法手册完整整理&#39;">
-<meta name="twitter:description" content="markdown语法详解1.特殊字符之所以把特殊字符放到最前面,就是因为Markdown对特殊字符处理不是很友好,很容易出现很奇怪的异常,其实就是因为文章中包含了特殊字符无法编译通过导致Hexo无法渲染在写博客时,一定注意不要写这些字符,如果要写,就进行转义有些人可能说可以使用反斜杠 \ 来处理,我这里不建议,因为我使用的时候没有解决问题。  下面是比较常见的几个: ! &amp;#33; — 惊叹号Ex">
+<meta name="twitter:title" content="语法手册完整整理">
+<meta name="twitter:description" content="markdown语法详解">
 
 
 
@@ -98,7 +98,7 @@
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/',
-    scheme: 'Muse',
+    scheme: 'Mist',
     version: '5.1.4',
     sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
     fancybox: true,
@@ -126,7 +126,7 @@
 
 
 
-  <title>语法手册完整整理' | 周磊的博客</title>
+  <title>语法手册完整整理 | 周磊的博客</title>
   
 
 
@@ -191,12 +191,42 @@
         </li>
       
         
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
         <li class="menu-item menu-item-archives">
           <a href="/archives/" rel="section">
             
               <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
             归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
           </a>
         </li>
       
@@ -250,7 +280,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">语法手册完整整理'</h1>
+          <h1 class="post-title" itemprop="name headline">语法手册完整整理</h1>
         
 
         <div class="post-meta">
@@ -300,7 +330,8 @@
       
 
       
-        <h1 id="markdown语法详解"><a href="#markdown语法详解" class="headerlink" title="markdown语法详解"></a>markdown语法详解</h1><h2 id="1-特殊字符"><a href="#1-特殊字符" class="headerlink" title="1.特殊字符"></a>1.特殊字符</h2><p>之所以把特殊字符放到最前面,就是因为Markdown对特殊字符处理不是很友好,很容易出现很奇怪的异常,其实就是因为文章中包含了特殊字符无法编译通过导致Hexo无法渲染<br>在写博客时,一定注意不要写这些字符,如果要写,就进行转义<br>有些人可能说可以使用反斜杠 \ 来处理,我这里不建议,因为我使用的时候没有解决问题。 </p>
+        <h1 id="markdown语法详解"><a href="#markdown语法详解" class="headerlink" title="markdown语法详解"></a>markdown语法详解</h1><a id="more"></a>
+<h2 id="1-特殊字符"><a href="#1-特殊字符" class="headerlink" title="1.特殊字符"></a>1.特殊字符</h2><p>之所以把特殊字符放到最前面,就是因为Markdown对特殊字符处理不是很友好,很容易出现很奇怪的异常,其实就是因为文章中包含了特殊字符无法编译通过导致Hexo无法渲染<br>在写博客时,一定注意不要写这些字符,如果要写,就进行转义<br>有些人可能说可以使用反斜杠 \ 来处理,我这里不建议,因为我使用的时候没有解决问题。 </p>
 <h2 id="下面是比较常见的几个"><a href="#下面是比较常见的几个" class="headerlink" title="下面是比较常见的几个:"></a>下面是比较常见的几个:</h2><ol>
 <li>! &#33; — 惊叹号Exclamation mark </li>
 </ol>
@@ -568,7 +599,7 @@
 
 
 
-  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Muse</a> v5.1.4</div>
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Mist</a> v5.1.4</div>
 
 
 
@@ -619,6 +650,9 @@
 
 
 
+  
+  
+
 
 
 
@@ -653,6 +687,16 @@
   
   
     <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/three/three.min.js"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/three/canvas_lines.min.js"></script>
   
 
 

@@ -5,7 +5,7 @@
   
 
 
-<html class="theme-next muse use-motion" lang="zh-Hans">
+<html class="theme-next mist use-motion" lang="zh-Hans">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -93,7 +93,7 @@
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/',
-    scheme: 'Muse',
+    scheme: 'Mist',
     version: '5.1.4',
     sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
     fancybox: true,
@@ -187,12 +187,42 @@
         </li>
       
         
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
         <li class="menu-item menu-item-archives">
           <a href="/archives/" rel="section">
             
               <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
             归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
           </a>
         </li>
       
@@ -248,7 +278,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2018/05/04/语法手册完整整理/" itemprop="url">语法手册完整整理'</a></h1>
+                <a class="post-title-link" href="/2018/05/04/语法手册完整整理/" itemprop="url">语法手册完整整理</a></h1>
         
 
         <div class="post-meta">
@@ -299,69 +329,14 @@
 
       
         
-          
-            <h1 id="markdown语法详解"><a href="#markdown语法详解" class="headerlink" title="markdown语法详解"></a>markdown语法详解</h1><h2 id="1-特殊字符"><a href="#1-特殊字符" class="headerlink" title="1.特殊字符"></a>1.特殊字符</h2><p>之所以把特殊字符放到最前面,就是因为Markdown对特殊字符处理不是很友好,很容易出现很奇怪的异常,其实就是因为文章中包含了特殊字符无法编译通过导致Hexo无法渲染<br>在写博客时,一定注意不要写这些字符,如果要写,就进行转义<br>有些人可能说可以使用反斜杠 \ 来处理,我这里不建议,因为我使用的时候没有解决问题。 </p>
-<h2 id="下面是比较常见的几个"><a href="#下面是比较常见的几个" class="headerlink" title="下面是比较常见的几个:"></a>下面是比较常见的几个:</h2><ol>
-<li>! &#33; — 惊叹号Exclamation mark </li>
-</ol>
-<ul>
-<li>” &#34; &quot; 双引号Quotation mark <h1 id="35-—-数字标志Number-sign"><a href="#35-—-数字标志Number-sign" class="headerlink" title="&#35; — 数字标志Number sign"></a>&#35; — 数字标志Number sign</h1>$ &#36; — 美元标志Dollar sign<br>% &#37; — 百分号Percent sign<br>&amp; &#38; &amp; Ampersand<br>‘ &#39; — 单引号Apostrophe<br>( &#40; — 小括号左边部分Left parenthesis<br>) &#41; — 小括号右边部分Right parenthesis </li>
-<li>&#42; — 星号Asterisk </li>
-</ul>
-<ul>
-<li>&#43; — 加号Plus sign<br>&lt; &#60; &lt; 小于号Less than<br>= &#61; — 等于符号Equals sign <blockquote>
-<p>&#62; &gt; 大于号Greater than<br>? &#63; — 问号Question mark<br>@ &#64; — Commercial at<br>[ &#91; — 中括号左边部分Left square bracket<br>\ &#92; — 反斜杠Reverse solidus (backslash)<br>] &#93; — 中括号右边部分Right square bracket<br>{ &#123; — 大括号左边部分Left curly brace<br>| &#124; — 竖线Vertical bar<br>} &#125; — 大括号右边部分Right curly brace </p>
-</blockquote>
-</li>
-</ul>
-<h2 id="2-标题"><a href="#2-标题" class="headerlink" title="2.标题"></a>2.标题</h2><p>在文字前加上#号</p>
-<blockquote>
-<p>1.# 一级标题</p>
-</blockquote>
-<blockquote>
-<p>2.## 二级标题</p>
-</blockquote>
-<blockquote>
-<p>3.### 三级标题</p>
-</blockquote>
-<blockquote>
-<p>4.#### 四级标题</p>
-</blockquote>
-<blockquote>
-<p>5.##### 五级标题</p>
-</blockquote>
-<blockquote>
-<p>6.###### 六级标题</p>
-</blockquote>
-<blockquote>
-<p>7.大标题</p>
-</blockquote>
-<blockquote>
-<p>\=</p>
-</blockquote>
-<blockquote>
-<p>8.小标题</p>
-</blockquote>
-<blockquote>
-<p>-</p>
-</blockquote>
-<p>预览效果：<br>-</p>
-<h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h1><h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2><h3 id="三级标题"><a href="#三级标题" class="headerlink" title="三级标题"></a>三级标题</h3><h4 id="四级标题"><a href="#四级标题" class="headerlink" title="四级标题"></a>四级标题</h4><h5 id="五级标题"><a href="#五级标题" class="headerlink" title="五级标题"></a>五级标题</h5><h6 id="六级标题"><a href="#六级标题" class="headerlink" title="六级标题"></a>六级标题</h6><p>大标题<br>=<br>小标题<br>-</p>
-<h2 id="3-粗体斜体"><a href="#3-粗体斜体" class="headerlink" title="3.粗体斜体"></a>3.粗体斜体</h2><blockquote>
-<p>1.*斜体文本*    _斜体文本_</p>
-</blockquote>
-<blockquote>
-<p>2.**粗体文本**   __粗体文本__</p>
-</blockquote>
-<blockquote>
-<p>3.***粗斜体文本***    ___粗斜体文本___</p>
-</blockquote>
-<p>预览效果：<br>-<br>1.<em>斜体文本</em>    <em>斜体文本</em></p>
-<p>2.<strong>粗体文本</strong>    <strong>粗体文本</strong></p>
-<p>3.<strong><em>粗斜体文本</em></strong>    <strong><em>粗斜体文本</em></strong></p>
-<h2 id="4-链接"><a href="#4-链接" class="headerlink" title="4.链接"></a>4.链接</h2><p>文字链接 [链接名称]\ (<a href="https://chwshuang.github.io" target="_blank" rel="noopener">https://chwshuang.github.io</a>)</p>
-
-          
+          <h1 id="markdown语法详解"><a href="#markdown语法详解" class="headerlink" title="markdown语法详解"></a>markdown语法详解</h1>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/05/04/语法手册完整整理/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -956,7 +931,7 @@
 
 
 
-  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Muse</a> v5.1.4</div>
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Mist</a> v5.1.4</div>
 
 
 
@@ -1007,6 +982,9 @@
 
 
 
+  
+  
+
 
 
 
@@ -1041,6 +1019,16 @@
   
   
     <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/three/three.min.js"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/three/canvas_lines.min.js"></script>
   
 
 
